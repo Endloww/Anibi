@@ -9,6 +9,8 @@ function controleurPrincipal($action) {
     $lesActions["visite"] = "visite.php";
     $lesActions["parametrage"] = "parametrage.php";
 
+
+
     $lesActions["deconnexion"] = "deconnexion.php";
 
 
