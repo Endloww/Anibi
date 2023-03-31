@@ -6,7 +6,7 @@ function getUtilisateurs() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from user");
+        $req = $cnx->prepare("select * from utilisateur");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
@@ -42,7 +42,7 @@ function addUtilisateur($mailU, $mdpU, $pseudoU) {
         $cnx = connexionPDO();
 
         $mdpUCrypt = crypt($mdpU, "sel");
-        $req = $cnx->prepare("insert into user (mailU, mdpU, pseudoU) values(:mailU,:mdpU,:pseudoU)");
+        $req = $cnx->prepare("insert into utilisateur (mailU, mdpU, pseudoU) values(:mailU,:mdpU,:pseudoU)");
         $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
         $req->bindValue(':mdpU', $mdpUCrypt, PDO::PARAM_STR);
         $req->bindValue(':pseudoU', $pseudoU, PDO::PARAM_STR);

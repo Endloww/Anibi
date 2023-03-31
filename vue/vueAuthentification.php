@@ -1,36 +1,48 @@
 <center>
-</br>
+    <br />
 <h1>Connexion</h1>
-
+    <br />
 <form action="./?action=connexion" method="POST">
 
-<div class="container text-center">
-    <div class="row">
-        <div class="col-lg-4">
+    <div class="row g-3">
+        <div class="col-4">
+        </div>
+        <div class="col-2">
+            <input id="mailU" name="mailU" type="text" style="text-align:center;" class="form-control" placeholder="Adresse Email" aria-label="Adresse Email">
 
         </div>
-        <div class="col-lg-2">
-            <input id="nom" type="text" style="text-align:center;" class="form-control" placeholder="Nom" aria-label="Nom">
+        <div class="col-2">
+            <input id="mdpU" name="mdpU" type="password" style="text-align:center;" class="form-control" placeholder="Mot de Passe" aria-label="Mot de Passe">
         </div>
-        <div class="col-lg-2">
-            <input id="prenom" type="text" style="text-align:center;" class="form-control" placeholder="Prénom" aria-label="Prénom">
-        </div>
+    </div
+    >
+    </br>
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" value="se-souvenir"> Se souvenir de toi
+        </label>
     </div>
-    <br/>
-        <input type="submit" />
-</div>
+    </br>
+        <label>
+            <button class="btn btn-lg btn-success btn-block" type="submit">Se connecter</button>
+        </label>
+
+
 
 
 </form>
-
 <br />
-<a href="./?action=inscription">Inscription</a>
+
+    <label>
+        <a href="">
+        <button class="btn btn-lg btn-outline-success btn-block" type="submit">S'inscrire</button>
+        </a>
+    </label>
 
 </center>
+<br />
 <hr>
 Utilisateur de test : <br />
 login : test@bts.sio<br />
 mot de passe : sio
-
-
 

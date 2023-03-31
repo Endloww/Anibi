@@ -14,7 +14,7 @@ logout();
                 
 
 // appel du script de vue qui permet de gerer l'affichage des donnees
-$titre = "authentification";
+$titre = "Anibi Meilleure Site";
 include "$racine/vue/entete.html.php";
 include "$racine/vue/vueAuthentification.php";
 include "$racine/vue/pied.html.php";

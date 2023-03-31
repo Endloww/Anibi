@@ -14,23 +14,42 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <button class="btn bg-dark me-2" href="#" type="submit">Anibi</button>
+
+            <a href="./?action=accueil" >
+            <button class="navbar-brand text-white btn btn-dark me-2" href="#" type="submit">Anibi</button>
+            </a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <button class="btn outline-success rounded-5 me-2" href="#" type="submit">Nouvelle entrée</button>
+                        <a href="./?action=entree">
+                            <button class="btn btn-outline-secondary rounded-2 me-2" type="submit">Nouvelle entrée</button>
+                        </a>
                     </li>
                     </br>
                     <li class="nav-item">
-                        <button class="btn outline-success rounded-5 me-2" href="#" type="submit">Visites en cours</button>
+                        <a href="./?action=visite">
+                        <button class="btn btn-outline-secondary rounded-2 me-2" type="submit">Visites en cours</button>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn outline-success rounded-5 me-2" href="#" type="submit">Paramétrage des expos</button>
+                        <a href="./?action=parametrage">
+                            <button class="btn btn-outline-secondary rounded-2 me-2"  type="submit">Paramétrage des expos</button>
+                        </a>
                     </li>
 
                 </ul>
 
-                    <button class="btn btn-outline-dark rounded-5 me-2" href="#" type="submit">Connexion</button>
+                <?php
+                if (isLoggedOn()) { ?>
+                    <a href="./?action=deconnexion" >
+                        <button class="btn btn-dark rounded-2 me-2" type="submit">Deconnexion</button>
+                    </a>
+                <?php }
+                else { ?>
+                <a href="./?action=connexion" >
+                    <button class="btn btn-dark rounded-2 me-2" type="submit">Connexion</button>
+                </a>
+                <?php } ?>
 
                 </form>
             </div>
