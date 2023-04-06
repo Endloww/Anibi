@@ -1,4 +1,7 @@
 <?php
+
+include_once "bd.inc.php";
+
 function getExpos() {
     $resultat = array();
 
@@ -18,3 +21,13 @@ function getExpos() {
     }
     return $resultat;
 }
+
+if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
+    // prog principal de test
+    header('Content-Type:text/plain');
+
+    echo "getExpos() : \n";
+    print_r(getExpos());
+
+}
+?>

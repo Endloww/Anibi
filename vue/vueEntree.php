@@ -1,6 +1,7 @@
 
 
 
+<hr>
 
 <div class="container">
     <center><h1 class="pt-5">Nouvelle entrée</h1></center>
@@ -23,11 +24,11 @@
 
         <div class="col-6">
             <?php
-            for ($i = 0; $i < count($listeExpos); $i++) { ?>
+            for ($i = 0; $i < count($uneExpo); $i++) { ?>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                        <?= $listeExpos[$i]["nomExpo"] ?>
+                        <?= $uneExpo[$i]["nomExpo"] ?>
                     </label>
                 </div>
                 <?php
@@ -40,13 +41,7 @@
         </div>
     </div>
 </div>
-
-
-<a href="./?action=inscription">Inscription</a>
 </center>
-<br />
-<hr>
-Utilisateur de test : <br />
-login : test@bts.sio<br />
-mot de passe : sio
+
+<br /><br />
 
