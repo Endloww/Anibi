@@ -2,7 +2,7 @@
     <br />
 <h1>Connexion</h1>
     <br />
-<form action="./?action=connexion" method="POST">
+<form action="../../../../../Users/blanchet.aurelien/Desktop/Anibi/vue?action=connexion" method="POST">
 
     <div class="row g-3">
         <div class="col-4">

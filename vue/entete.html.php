@@ -16,24 +16,24 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a href="./?action=accueil" >
+            <a href="../../../../../Users/blanchet.aurelien/Desktop/Anibi/vue?action=accueil" >
             <button class="navbar-brand text-white btn btn-dark me-2" href="#" type="submit">Anibi</button>
             </a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="./?action=entree">
+                        <a href="../../../../../Users/blanchet.aurelien/Desktop/Anibi/vue?action=entree">
                             <button class="btn btn-outline-secondary rounded-2 me-2" type="submit">Nouvelle entrée</button>
                         </a>
                     </li>
                     </br>
                     <li class="nav-item">
-                        <a href="./?action=visite">
+                        <a href="../../../../../Users/blanchet.aurelien/Desktop/Anibi/vue?action=visite">
                         <button class="btn btn-outline-secondary rounded-2 me-2" type="submit">Visites en cours</button>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./?action=parametrage">
+                        <a href="../../../../../Users/blanchet.aurelien/Desktop/Anibi/vue?action=parametrage">
                             <button class="btn btn-outline-secondary rounded-2 me-2"  type="submit">Paramétrage des expos</button>
                         </a>
                     </li>
@@ -42,12 +42,12 @@
 
                 <?php
                 if (isLoggedOn()) { ?>
-                    <a href="./?action=deconnexion" >
+                    <a href="../../../../../Users/blanchet.aurelien/Desktop/Anibi/vue?action=deconnexion" >
                         <button class="btn btn-dark rounded-2 me-2" type="submit">Deconnexion</button>
                     </a>
                 <?php }
                 else { ?>
-                <a href="./?action=connexion" >
+                <a href="../../../../../Users/blanchet.aurelien/Desktop/Anibi/vue?action=connexion" >
                     <button class="btn btn-dark rounded-2 me-2" type="submit">Connexion</button>
                 </a>
                 <?php } ?>

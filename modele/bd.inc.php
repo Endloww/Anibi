@@ -2,7 +2,7 @@
 
 function connexionPDO() {
     $login = "root";
-    $mdp = "&6HAUTdanslaFauré";
+    $mdp = "";
     $bd = "anibi";
     $serveur = "localhost";
 
